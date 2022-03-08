@@ -1,0 +1,7 @@
+
+#!/bin/sh
+
+. "$(dirname "$0")/_/husky.sh"
+branch=$(git symbolic-ref --short -q HEAD)
+echo $branch
+yarn commitlint --edit $1
