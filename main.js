@@ -33,5 +33,6 @@ watch(data, "arr", (newVal, oldVal) => {
 watch(data, "arr.0", (newVal, oldVal) => {
   console.log("arr.0新:" + newVal, "旧:" + oldVal);
 });
-console.log(123);
+console.log(1234);
+console.log(123455);
 console.log(data);
