@@ -1,6 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
-branch = $(git symbolic-ref --short -q HEAD)
+branch=$(git symbolic-ref --short -q HEAD)
 git pull origin $branch
 echo `$?`
 if [ "$?" == "0" ]; then
