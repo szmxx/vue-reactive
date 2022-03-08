@@ -6,6 +6,6 @@
  # @LastEditTime: 2022-03-08 20:35:32
 ### 
 branch=$(git symbolic-ref --short -q HEAD)
-# echo $branch
+echo $branch
 git pull origin $branch
 git push origin $branch
