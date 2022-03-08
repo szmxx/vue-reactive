@@ -3,7 +3,7 @@
  * @LastEditors: weicong
  * @Description:
  * @Date: 2022-03-02 22:03:32
- * @LastEditTime: 2022-03-08 20:38:00
+ * @LastEditTime: 2022-03-08 20:43:48
  */
 import Observer from "./src/Observer";
 import Watcher from "./src/Watcher";
@@ -33,4 +33,5 @@ watch(data, "arr", (newVal, oldVal) => {
 watch(data, "arr.0", (newVal, oldVal) => {
   console.log("arr.0新:" + newVal, "旧:" + oldVal);
 });
+console.log(123);
 console.log(data);
