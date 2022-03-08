@@ -3,7 +3,6 @@
 
 . "$(dirname "$0")/_/husky.sh"
 branch=$(git symbolic-ref --short -q HEAD)
-echo $branch
 git pull origin $branch;
 git push origin $branch
 yarn commitlint --edit $1
