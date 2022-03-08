@@ -1,6 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 yarn commitlint --edit $1
-branch=$(git symbolic-ref --short -q HEAD)
-git pull origin $branch
-git push origin $branch
+yarn pull-push

@@ -8,7 +8,7 @@
     "build": "rollup --config",
     "commit": "git-cz",
     "prepare": "husky install",
-    "commitexec": "bash commitexec.sh"
+    "pull-push": "bash pull-push.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",
