@@ -2,7 +2,7 @@
 . "$(dirname "$0")/_/husky.sh"
 branch=$(git symbolic-ref --short -q HEAD)
 git pull origin $branch
-echo `$?`
+echo $?
 if [ "$?" == "0" ]; then
     git push origin $branch
     if [ "$?" == "0" ]; then
